@@ -1,0 +1,54 @@
+body, ul, li, h1, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.content {
+    padding: 100px 20px; 
+}
+
+section {
+    padding: 100px 0;
+    border-bottom: 1px solid black;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(241, 186, 33);
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: rgb(4, 244, 244);
+}
+
+.navbar.scrolled {
+    background-color: rgb(118, 11, 241);
+}
